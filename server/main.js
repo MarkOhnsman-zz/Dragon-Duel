@@ -9,7 +9,6 @@ import GameController from "./controllers/GameController";
 const port = process.env.PORT || 3000;
 let server = express();
 DbContext.connect();
-server.use(express.static(__dirname + "/../client/dist"));
 
 const whitelist = ["http://localhost:8080"];
 const corsOptions = {
